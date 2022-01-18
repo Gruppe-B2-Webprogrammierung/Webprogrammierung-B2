@@ -7,8 +7,6 @@ By contributing, you assert that:
 - The contribution is your own original work.
 - You have the right to assign the copyright for the work (it is not owned by your employer, or
   you have been given copyright assignment in writing).
-- You [license](./LICENSE) the contribution under the terms applied to the rest of the project.
-- You agree to follow the [code of conduct](./CODE_OF_CONDUCT.md).
 
 
 ## How to Contribute
