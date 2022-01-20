@@ -1,22 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Home</title>
 	</head>
 	<body>
 		<div>
-			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam in quia
-			magni laboriosam dignissimos eveniet, nesciunt fuga ipsa, enim cupiditate
-			beatae totam. Nam, laborum veritatis sapiente minima ipsa dolorem
-			laboriosam?
+			<h1>Herzlich Willkommen!</h1>
+			<h2>Homepage</h2>
+			<p>Dies ist die Hompage der Projektarbeit der Gruppe B2 des Kurses IT3131 – Webprogrammierung. <br>
+				Hier befassen wir uns mit dem Thema der Essenszubereitung. <br>
+				Der Hauptfokus der Webanwendung liegt momentan auf der visuell übersichtlichen Darstellung von Koch- und Backrezepten.</p>
+			<img
+				class="recipes-book"
+				src="https://cdn.pixabay.com/photo/2016/03/31/14/49/book-1292854_1280.png"
+				alt="Rezeptbuch"
+				width=20%
+				height=auto
+			/>
 		</div>
-		<ul>
-			<li><a href="/recipe1.html">Recipe 1</a></li>
-			<li></li>
-			<li></li>
-		</ul>
+		<div>
+			<p>Hier ist die Liste der momentan verfügbaren Rezepte:</p>
+			<ul>
+				<li><a href="./recipe1.html">Rezept 1</a></li>
+				<li>lorem ipsum</li>
+				<li>lorem ipsum</li>
+			</ul>
+			<p>
+				<img
+					class="warning"
+					src="https://cdn.pixabay.com/photo/2012/04/12/22/25/warning-sign-30915_1280.png"
+					alt="Warnung"
+					width=1%
+					height=auto
+				/>
+				 DISCLAIMER: Bei den Bildern, die bei den Rezepten mit dargestellt werden, handelt es sich um Bilder von Serviervorschlägen.  <br>
+				Es besteht keinerlei Garantie dafür, dass Ihr gekochtes Gericht dem Gericht entspricht, welches auf den Bildern zu sehen ist!</p>
+		</div>
+		<div>
+			<form style="margin-top: 5.0em;margin-bottom: 3.0em;">
+				<fieldset>
+					<legend>Bitte bewerten Sie unsere Webseite</legend>
+					<input type="radio" name="unit" id="oneStar" />
+					<label for="oneStar">1/5 Sterne</label>
+					<input type="radio" name="unit" id="twoStar" />
+					<label for="twoStar">2/5 Sterne</label>
+					<input type="radio" name="unit" id="threeStar" />
+					<label for="threeStar">3/5 Sterne</label>
+					<input type="radio" name="unit" id="fourStar" />
+					<label for="fourStar">4/5 Sterne</label>
+					<input type="radio" name="unit" id="fiveStar" />
+					<label for="fiveStar">5/5 Sterne</label>
+				</fieldset>
+				<fieldset>
+				<legend>Würden Sie uns weiterempfehlen?</legend>
+				<input type="radio" name="unit" id="maybe" />
+					<label for="maybe">vielleicht</label>
+					<input type="radio" name="unit" id="yes" />
+					<label for="yes">ja</label>
+					<input type="radio" name="unit" id="definitly" />
+					<label for="definitly">definitiv</label>
+				</fieldset>
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+			  </form>
+		</div>
+		<div>
+			<p>Wenn Sie sich die Webanwendung selber runterladen wollen klicken Sie 
+				<a href="https://github.com/Gruppe-B2-Webprogrammierung/Webprogrammierung-B2">hier</a> (Link auf das GitHub Repository).</p>
+		</div>
 	</body>
 </html>
