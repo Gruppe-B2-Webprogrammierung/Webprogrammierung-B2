@@ -3,7 +3,7 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	width: 900px;
+	max-width: 1000px;
 	margin: 0px auto 0px auto;
 }
 
@@ -47,11 +47,11 @@ td {
 	border-radius: 5px;
 	text-align: center;
 	margin: 0px auto 0px auto;
-	width: 90%;
+	width: 100%;
 }
 
 .comment-textarea {
-	width: 100%;
+	width: 99%;
 	height: 100px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -76,7 +76,7 @@ td {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
+	overflow: auto;
 	background-color: #333;
 	justify-content: center;
 }
@@ -124,7 +124,7 @@ td {
 }
 
 .content {
-	grid-column-start: 2;
+	grid-column-start: 1;
 	grid-column-end: 4;
 }
 
