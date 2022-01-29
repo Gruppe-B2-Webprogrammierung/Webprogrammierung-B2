@@ -78,6 +78,7 @@ td {
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
+	justify-content: center;
 }
 
 .flex-container > a {
@@ -89,8 +90,17 @@ td {
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
-
 }
+
+.flex-container > p {
+	margin-top: 13px;
+	border-left: 1px solid white;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+}
+
 .flex-container .active {
 	background-color: #04AA6D;
 }
@@ -119,6 +129,7 @@ td {
 }
 
 .footer {
+	margin-top: 50px;
 	grid-column-start: 1;
 	grid-column-end: 4;
 }
