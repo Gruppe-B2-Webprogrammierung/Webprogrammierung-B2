@@ -1,10 +1,10 @@
 .container {
-	display: flexbox;
-	flex-direction: row;
+	display:flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	max-width: 1000px;
-	margin: 0px auto 0px auto;
+	max-width: 62.5em;
+	margin: 0em auto 0em auto;
 }
 
 /* center container */
@@ -12,49 +12,49 @@
 table,
 th,
 td {
-	border: 1px solid black;
+	border: 0.063em solid black;
 	border-collapse: collapse;
 }
 
 th {
 	text-align: left;
-	padding: 8px;
+	padding: 0.5em;
 	background-color: #4caf50;
 	color: white;
-	min-width: 100px;
+	min-width: 6.25em;
 }
 
 td {
 	text-align: left;
-	padding: 8px;
+	padding: 0.5em;
 }
 
 .button {
 	background-color: #4caf50;
 	border: none;
 	color: white;
-	padding: 15px 32px;
+	padding: 0.938em 2em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
+	font-size: 1em;
+	margin: 0.25em 0.125em;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 0.313em;
 }
 
 .recipe-image {
-	border-radius: 5px;
+	border-radius: 0.313em;
 	text-align: center;
-	margin: 0px auto 0px auto;
+	margin: 0em auto 0em auto;
 	width: 100%;
 }
 
 .comment-textarea {
 	width: 99%;
-	height: 100px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
+	height: 6.25em;
+	border: 0.063em solid #ccc;
+	border-radius: 0.25em;
 	resize: none;
 }
 
@@ -73,6 +73,8 @@ td {
 
 .flex-container {
 	display: flex;
+	flex-direction: row;
+	width: auto;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -83,23 +85,23 @@ td {
 }
 
 .flex-container > a {
-	margin: 10px;
+	margin: 0.625em;
 	text-decoration: none;
 	font-weight: 800;
-	font-size: 20px;
+	font-size: 1.25em;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 0.875em 1em;
 }
 
 .flex-container > p {
-	margin-top: 13px;
-	border-left: 1px solid white;
-	font-size: 14px;
+	margin-top: 0.813em;
+	border-left: 0.063em solid white;
+	font-size: 0.875em;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 0.875em 1em;
 }
 
 .flex-container .active {
@@ -130,7 +132,7 @@ td {
 }
 
 .footer {
-	margin-top: 50px;
+	margin-top: 3.125em;
 	grid-column-start: 1;
 	grid-column-end: 4;
 }
