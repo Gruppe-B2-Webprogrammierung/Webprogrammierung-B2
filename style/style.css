@@ -79,6 +79,7 @@ td {
 	overflow: auto;
 	background-color: #333;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .flex-container > a {
