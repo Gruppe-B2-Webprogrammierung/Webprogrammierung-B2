@@ -57,27 +57,36 @@
 						</p>
 					</div>
 					<div>
-						<form style="margin-top: 5em; margin-bottom: 3em">
+						<form
+							style="margin-top: 5em; margin-bottom: 3em"
+							method="post"
+							action="/api/review"
+						>
 							<fieldset>
 								<legend>Bitte bewerten Sie unsere Webseite</legend>
-								<input type="radio" name="unit" id="oneStar" />
+								<input type="radio" name="star" id="oneStar" value="1" />
 								<label for="oneStar">1/5 Sterne</label>
-								<input type="radio" name="unit" id="twoStar" />
+								<input type="radio" name="star" id="twoStar" value="2" />
 								<label for="twoStar">2/5 Sterne</label>
-								<input type="radio" name="unit" id="threeStar" />
+								<input type="radio" name="star" id="threeStar" value="3" />
 								<label for="threeStar">3/5 Sterne</label>
-								<input type="radio" name="unit" id="fourStar" />
+								<input type="radio" name="star" id="fourStar" value="4" />
 								<label for="fourStar">4/5 Sterne</label>
-								<input type="radio" name="unit" id="fiveStar" />
+								<input type="radio" name="star" id="fiveStar" value="5" />
 								<label for="fiveStar">5/5 Sterne</label>
 							</fieldset>
 							<fieldset>
 								<legend>Würden Sie uns weiterempfehlen?</legend>
-								<input type="radio" name="unit" id="maybe" />
+								<input type="radio" name="recommend" id="maybe" value="maybe" />
 								<label for="maybe">vielleicht</label>
-								<input type="radio" name="unit" id="yes" />
+								<input type="radio" name="recommend" id="yes" value="yes" />
 								<label for="yes">ja</label>
-								<input type="radio" name="unit" id="definitly" />
+								<input
+									type="radio"
+									name="recommend"
+									id="definitly"
+									value="definitly"
+								/>
 								<label for="definitly">definitiv</label>
 							</fieldset>
 							<button type="reset">Reset</button>
