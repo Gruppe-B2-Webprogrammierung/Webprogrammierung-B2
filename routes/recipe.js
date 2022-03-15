@@ -35,6 +35,7 @@ router.get('/search', trackUser, (req, res) => {
 router.get('/:id', trackUser, function (req, res) {
 	const id = req.params.id;
 	const recipe = recipes.find((recipe) => recipe.id === id);
+	if (!recipe) res.status(404).send('Recipe not found');
 	res.render('recipe', {
 		title: recipe.title,
 		recipe,

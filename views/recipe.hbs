@@ -58,7 +58,8 @@
 			</div>
 			<hr />
 			<div id='comments'>
-				<h2>Kommentar</h2>
+				<h2>Kommentare</h2>
+				<p id='error-message'></p>
 				<form action='/api/recipe/add' method='post'>
 					<input type='hidden' name='recipe_id' value='{{recipe.id}}' />
 					<div class='mb-1'>
@@ -77,17 +78,10 @@
 					/>
 				</form>
 			</div>
+			<div class='comments-section'>
+				<div class='comments-box'></div>
+			</div>
 			<br /><br /><br /><br /><br />
 		</div>
-	</div>
-	<div id='footer' class='footer flex-container'>
-		<a href='/'>Impressum</a>
-		<p>Alle Rechte vorbehalten</p>
-		<p>
-			Webanwendung herunterladen:
-			<a
-				href='https://github.com/Gruppe-B2-Webprogrammierung/Webprogrammierung-B2'
-			>GitHub</a>
-		</p>
 	</div>
 </div>
