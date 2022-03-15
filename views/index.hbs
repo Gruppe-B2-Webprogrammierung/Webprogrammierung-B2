@@ -1,0 +1,113 @@
+<div class='grid-container'>
+	<div class='menu'></div>
+	<div class='content'>
+		<div class='container'>
+			<div>
+				<h1>Herzlich Willkommen {{username}}!</h1>
+				<h2>Homepage</h2>
+				<p>
+					Dies ist die Hompage der Projektarbeit der Gruppe B2 des Kurses IT3131
+					– Webprogrammierung.
+					<br />
+					Hier befassen wir uns mit dem Thema der Essenszubereitung.
+					<br />
+					Der Hauptfokus der Webanwendung liegt momentan auf der visuell
+					übersichtlichen Darstellung von Koch- und Backrezepten.
+				</p>
+				<img
+					class='recipes-book'
+					src='https://cdn.pixabay.com/photo/2016/03/31/14/49/book-1292854_1280.png'
+					alt='Rezeptbuch'
+					width='20%'
+					height='auto'
+				/>
+			</div>
+			<div>
+				<form action='/recipe/search' method='get'>
+					<input type='text' name='q' placeholder='Suche...' />
+					<input type='submit' value='Suchen' />
+				</form>
+			</div>
+			<div>
+				<p>Hier ist die Liste der momentan verfügbaren Rezepte:</p>
+				<ul>
+					<li><a href='/recipe/e5hce3'>Rezept 1</a></li>
+					<li>lorem ipsum</li>
+					<li>lorem ipsum</li>
+				</ul>
+				<p>
+					<img
+						class='warning'
+						src='https://cdn.pixabay.com/photo/2012/04/12/22/25/warning-sign-30915_1280.png'
+						alt='Warnung'
+						width='1%'
+						height='auto'
+					/>
+					DISCLAIMER: Bei den Bildern, die bei den Rezepten mit dargestellt
+					werden, handelt es sich um Bilder von Serviervorschlägen.
+					<br />
+					Es besteht keinerlei Garantie dafür, dass Ihr gekochtes Gericht dem
+					Gericht entspricht, welches auf den Bildern zu sehen ist!
+				</p>
+			</div>
+			<div>
+				<form
+					style='margin-top: 5em; margin-bottom: 3em'
+					method='post'
+					action='/api/review'
+				>
+					<fieldset>
+						<legend>Bitte bewerten Sie unsere Webseite</legend>
+						<input type='radio' name='star' id='oneStar' value='1' />
+						<label for='oneStar'>1/5 Sterne</label>
+						<input type='radio' name='star' id='twoStar' value='2' />
+						<label for='twoStar'>2/5 Sterne</label>
+						<input type='radio' name='star' id='threeStar' value='3' />
+						<label for='threeStar'>3/5 Sterne</label>
+						<input type='radio' name='star' id='fourStar' value='4' />
+						<label for='fourStar'>4/5 Sterne</label>
+						<input type='radio' name='star' id='fiveStar' value='5' />
+						<label for='fiveStar'>5/5 Sterne</label>
+					</fieldset>
+					<fieldset>
+						<legend>Würden Sie uns weiterempfehlen?</legend>
+						<input type='radio' name='recommend' id='maybe' value='maybe' />
+						<label for='maybe'>vielleicht</label>
+						<input type='radio' name='recommend' id='yes' value='yes' />
+						<label for='yes'>ja</label>
+						<input
+							type='radio'
+							name='recommend'
+							id='definitly'
+							value='definitly'
+						/>
+						<label for='definitly'>definitiv</label>
+					</fieldset>
+					<button type='reset'>Reset</button>
+					<button type='submit'>Submit</button>
+				</form>
+			</div>
+			<!--<div>
+						<p>
+							Wenn Sie sich die Webanwendung selber runterladen wollen klicken
+							Sie
+							<a
+								href="https://github.com/Gruppe-B2-Webprogrammierung/Webprogrammierung-B2"
+								>hier</a
+							>
+							(Link auf das GitHub Repository).
+						</p>
+					</div>-->
+		</div>
+	</div>
+	<div id='footer' class='footer flex-container'>
+		<a href='notFound.html'>Impressum</a>
+		<p>Alle Rechte vorbehalten</p>
+		<p>
+			Webanwendung herunterladen:
+			<a
+				href='https://github.com/Gruppe-B2-Webprogrammierung/Webprogrammierung-B2'
+			>GitHub</a>
+		</p>
+	</div>
+</div>

@@ -1,0 +1,34 @@
+[
+    {
+        "id": "e5hce3",
+        "title": "Schoko-Nuss-Kuchen",
+        "description": "(Ohne Mehl)",
+        "image": "https://img.chefkoch-cdn.de/rezepte/378991124219163/bilder/341381/crop-960x540/schoko-nuss-kuchen-ohne-mehl.jpg",
+        "ingredients": [
+            {
+                "amount": "500",
+                "unit": "g",
+                "name": "Zutat 1"
+            },
+            {
+                "amount": "250",
+                "unit": "g",
+                "name": "Zutat 2"
+            },
+            {
+                "amount": "8",
+                "unit": " Stück",
+                "name": "Zutat 3"
+            }
+        ],
+        "nutritionalValues": {
+            "energy": "100",
+            "carbohydrates": "20",
+            "fat": "10",
+            "protein": "5"
+        },
+        "preparationTime": 10,
+        "cookingTime": 10,
+        "recipe": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusamus delectus! Inventore maxime commodi reprehenderit, eveniet velit quas similique tenetur itaque voluptatibus sit ducimus iusto repellat. Consectetur aspernatur tempore enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita Zutaten, obcaecati officia aliquam soluta, consequuntur similique aspernatur pariatur ab quidem et sed facilis laudantium explicabo illum perspiciatis. Enim, rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptates aliquid provident suscipit. Vero, voluptatibus quis? Libero vel vero velit distinctio, vitae, enim, neque obcaecati sequi rem iusto natus provident?"
+    }
+]
