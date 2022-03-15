@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { getCookie } from 'cookie';
+import { getCookie } from './cookie.js';
 const form = document.querySelector('form');
 const errorMessage = document.querySelector('#error-message');
 const commentsBox = document.querySelector('.comments-box');
@@ -12,7 +12,7 @@ class Comments {
 	#comments = [];
 	set comments(comments) {
 		this.#comments = comments;
-		console.log('Comments: ', this.#comments);
+		commentsBox.innerHTML = '';
 		this.#comments.forEach((comment) => {
 			commentsBox.innerHTML += `<div class='comment'>
 					<div class='comment-header'>
@@ -47,7 +47,6 @@ let comments = new Comments();
 			return res.json();
 		})
 		.then((data) => {
-			console.log(data);
 			comments.comments = data;
 		})
 		.catch((err) => {
@@ -78,7 +77,6 @@ const submitComment = (event) => {
 	}).catch((err) => {
 		console.log(err);
 	});
-	console.log('here');
 	comments.comments = [...comments.comments, { user_id, content: comment }];
 	errorMessage.hidden = true;
 };

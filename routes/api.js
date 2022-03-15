@@ -21,7 +21,7 @@ router.post('/comment/add', function (req, res, next) {
 		comments.push({ recipe_id, comments: [{ user_id, content }] });
 	}
 
-	res.send('respond with a resource');
+	res.status(200).send();
 });
 
 router.get('/comment/get', function (req, res, next) {
