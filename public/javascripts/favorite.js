@@ -9,7 +9,6 @@ class Favorites {
 	constructor(callback = (fav) => {}, rerender = false, rerenderTo = null) {
 		this.#rerender = rerender;
 		this.#rerenderTo = rerenderTo;
-		console.log(getCookie('user_id'));
 		fetch(`/api/favorite/get?user_id=${getCookie('user_id')}`, {
 			method: 'GET',
 			headers: {
@@ -20,7 +19,6 @@ class Favorites {
 				return res.json();
 			})
 			.then((data) => {
-				console.log(data);
 				if (data.length > 0) {
 					this.#favorites = data;
 				}
@@ -43,7 +41,6 @@ class Favorites {
 				return res.json();
 			})
 			.then((data) => {
-				console.log(data);
 				return data;
 			})
 			.catch((err) => {
@@ -89,7 +86,6 @@ class Favorites {
 		let recipes = [];
 		this.#favorites.forEach((favorite) => {
 			this.#getRecipeData(favorite).then((data) => {
-				console.log(data);
 				recipes.push(data);
 
 				let listItem = document.createElement('li');

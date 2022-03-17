@@ -16,7 +16,6 @@ let userTrackData = [];
  */
 function trackUser(req, res, next) {
 	if (req.cookies.user_id) {
-		console.log(req.originalUrl);
 		const user = userTrackData.find(
 			(user) => user.user_id === req.cookies.user_id
 		);
@@ -45,7 +44,6 @@ function trackUser(req, res, next) {
 				],
 			});
 		}
-		console.log(userTrackData.map((user) => user.pages));
 		return next();
 	}
 	return next();

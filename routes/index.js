@@ -12,7 +12,6 @@ var { Request, Response, NextFunction } = require('express');
  */
 router.get('/', trackUser, function (req, res, next) {
 	let user_id = req.cookies.user_id;
-	console.log(user_id);
 	if (!user_id) {
 		user_id = nanoid(5);
 		res

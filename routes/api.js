@@ -54,11 +54,9 @@ router.get('/favorite/get', (req, res) => {
 
 router.post('/favorite/add', (req, res) => {
 	let { user_id, recipe_id } = req.query;
-	console.log(user_id, recipe_id);
 	let userFavorites = favorites.find(
 		(favorite) => favorite.user_id === user_id
 	);
-	console.log(userFavorites);
 	if (userFavorites) {
 		userFavorites.favorites.push(recipe_id);
 	} else {
@@ -71,7 +69,6 @@ router.get('/recipe/get', (req, res) => {
 	let { recipe_id } = req.query;
 	if (!recipe_id) {
 		let { recipe_ids } = req.body;
-		console.log(recipe_ids);
 		if (!recipe_ids) {
 			res.status(400).send('No recipe id provided');
 			return;
