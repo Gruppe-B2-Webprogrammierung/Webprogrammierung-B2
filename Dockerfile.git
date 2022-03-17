@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:experimental
 FROM node:lts-alpine3.14
 RUN mkdir /app
-WORKDIR /app 
 RUN apk add --no-cache git
 RUN git clone https://github.com/Gruppe-B2-Webprogrammierung/Webprogrammierung-B2.git /app
+WORKDIR /app 
 ENV NODE_ENV=production
 RUN npm install --production
 ENV PORT=8080
 EXPOSE 8080
-CMD ["node", "app.js"]
+CMD ["node", "./bin/www"]
