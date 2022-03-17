@@ -16,20 +16,33 @@ let userTrackData = [];
  */
 function trackUser(req, res, next) {
 	if (req.cookies.user_id) {
+		console.log(req.originalUrl);
 		const user = userTrackData.find(
 			(user) => user.user_id === req.cookies.user_id
 		);
+		let path = req.originalUrl.slice(
+			0,
+			req.originalUrl.indexOf(req.path) + req.path.length
+		);
 		if (user) {
-			const page = user.pages.find((page) => page.route === req.path);
+			const page = user.pages.find((page) => page.route === path);
 			if (page) {
 				page.count++;
 			} else {
-				user.pages.push({ route: req.path, count: 1 });
+				user.pages.push({
+					route: path,
+					count: 1,
+				});
 			}
 		} else {
 			userTrackData.push({
 				user_id: req.cookies.user_id,
-				pages: [{ route: req.path, count: 1 }],
+				pages: [
+					{
+						route: path,
+						count: 1,
+					},
+				],
 			});
 		}
 		console.log(userTrackData.map((user) => user.pages));
