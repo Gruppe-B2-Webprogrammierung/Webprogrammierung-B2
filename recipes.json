@@ -6,29 +6,121 @@
         "image": "https://img.chefkoch-cdn.de/rezepte/378991124219163/bilder/341381/crop-960x540/schoko-nuss-kuchen-ohne-mehl.jpg",
         "ingredients": [
             {
-                "amount": "500",
+                "amount": "200",
                 "unit": "g",
-                "name": "Zutat 1"
+                "name": "Zucker"
             },
             {
-                "amount": "250",
-                "unit": "g",
-                "name": "Zutat 2"
+                "amount": "1",
+                "unit": "Pk",
+                "name": "Vanillezucker"
             },
             {
-                "amount": "8",
-                "unit": " Stück",
-                "name": "Zutat 3"
+                "amount": "6",
+                "unit": "Stück",
+                "name": "Eier"
+            },
+            {
+                "amount": "200 ",
+                "unit": "g",
+                "name": "Margarine oder Butter"
+            },
+            {
+                "amount": "400",
+                "unit": "g",
+                "name": "Haselnüsse, gemahlen"
+            },
+            {
+                "amount": "1",
+                "unit": "TL",
+                "name": "Backpulver"
+            },
+            {
+                "amount": "150",
+                "unit": "g",
+                "name": "Schokolade (Vollmilchschokolade)"
             }
         ],
         "nutritionalValues": {
-            "energy": "100",
-            "carbohydrates": "20",
-            "fat": "10",
-            "protein": "5"
+            "energy": "6128",
+            "carbohydrates": "321,03",
+            "fat": "491,21",
+            "protein": "118,66"
         },
-        "preparationTime": 10,
+        "preparationTime": 15,
+        "cookingTime": 60,
+        "recipe": "Backofen auf 175°C vorheizen und die Wärme, die dabei entsteht, gleich dazu nutzen, um die Schokolade auf einem hitzebeständigen Teller schmelzen zu lassen. Die ersten vier Zutaten so lange verrühren, bis der Zucker sich richtig aufgelöst hat. Die gemahlenen Haselnüsse mit dem Backpulver unter den Teig mischen. Die flüssige Schokolade dazugeben und die (ziemlich weiche) Masse in eine Gugelhupfform füllen.\nBei 175°C eine Stunde lang backen. Nach ca. 20 Minuten ein Stück Alufolie drüberlegen, damit er nicht so dunkel wird."
+    },
+    {
+        "id": "e5hce4",
+        "title": "CHOCOLATE COOKIES",
+        "description": "Die Chocolate Cookies sind das perfekte Rezept für eine typische Tea-time aus England.",
+        "image": "https://www.gutekueche.at/storage/media/recipe/14691/resp/chocolate-cookies___webp_938_567.webp",
+        "ingredients": [
+            {
+                "amount": "150",
+                "unit": "g",
+                "name": "Butter (in Stücke geschnitten)"
+            },
+            {
+                "amount": "150",
+                "unit": "g",
+                "name": "Staubzucker"
+            },
+            {
+                "amount": "1",
+                "unit": "Pk",
+                "name": "Vanillezucker"
+            },
+            {
+                "amount": "1",
+                "unit": "Stück",
+                "name": "Ei"
+            },
+            {
+                "amount": "220",
+                "unit": "g",
+                "name": "Mehl"
+            },
+            {
+                "amount": "0.5",
+                "unit": "Pk",
+                "name": "Backpulver"
+            },
+            {
+                "amount": "1",
+                "unit": "Priese",
+                "name": "Salz"
+            },
+            {
+                "amount": "4",
+                "unit": "EL",
+                "name": "Milch"
+            },
+            {
+                "amount": "80",
+                "unit": "g",
+                "name": "Schokolade (weiß, gehackt)"
+            },
+            {
+                "amount": "80",
+                "unit": "g",
+                "name": "Schokotropfen (zartbitter)"
+            },
+            {
+                "amount": "1",
+                "unit": "Prise",
+                "name": "Zimt (gemahlen)"
+            }
+        ],
+        "nutritionalValues": {
+            "energy": "1149",
+            "carbohydrates": "138,23",
+            "fat": "59,71",
+            "protein": "13,86"
+        },
+        "preparationTime": 20,
         "cookingTime": 10,
-        "recipe": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusamus delectus! Inventore maxime commodi reprehenderit, eveniet velit quas similique tenetur itaque voluptatibus sit ducimus iusto repellat. Consectetur aspernatur tempore enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita Zutaten, obcaecati officia aliquam soluta, consequuntur similique aspernatur pariatur ab quidem et sed facilis laudantium explicabo illum perspiciatis. Enim, rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptates aliquid provident suscipit. Vero, voluptatibus quis? Libero vel vero velit distinctio, vitae, enim, neque obcaecati sequi rem iusto natus provident?"
+        "recipe": "In einer Schüssel, Butter (in Stücke geschnitten) mit dem Staubzucker und Vanillezucker schaumig schlagen. Das Ei zufügen und alles schön cremig schlagen.\nMehl mit dem Backpulver vermengen, salzen und dem Teig zufügen. Milch zufügen und weiter schlagen. Nun die gehackte, weiße Schokolade unterrühren.\nZum Schluss die Schokotropfen und Zimt dem Teig unterheben.\nEin Backblech mit Backpapier auslegen. Den Ofen auf 180°C, Ober- und Unterhitze vorheizen.\nAus der Masse kleine Häufchen formen und mit einem Löffel etwas platt drücken, mit etwas Abstand auf das Blech geben.\nDie Cookies ca. 8-10 Minuten im vorgeheizten Ofen bei Ober- und Unterhitze backen. Auskühlen lassen und sofort servieren oder in einer Keksdose aufbewahren.\n"
     }
 ]
