@@ -1,0 +1,90 @@
+<div class='grid-container'>
+	<script type='module' src='/javascripts/recipe.js'></script>
+	<div class='menu'>Menu</div>
+	<div class='content'>
+		<div class='container'>
+			<h1>{{recipe.title}}</h1>
+			<h2>{{recipe.description}}</h2>
+
+			<img class='recipe-image' src={{recipe.image}} alt='Kuchen' />
+			<hr />
+			<div class='mb-3' id='ingredients'>
+				<h2>Zutaten pro Portion</h2>
+				<table class='table'>
+					<tr>
+						<th>Menge</th>
+						<th>Zutat</th>
+					</tr>
+					{{#each recipe.ingredients as |ingredient|}}
+						<tr>
+							<td>{{ingredient.amount}}{{ingredient.unit}}</td>
+							<td>{{ingredient.name}}</td>
+						</tr>
+					{{/each}}
+
+				</table>
+			</div>
+			<hr />
+			<div class='mb-3' id='nutrition'>
+				<h2>Nährwerte pro Portion</h2>
+				<table class='table'>
+					<tr>
+						<th>Energie</th>
+						<th>Kohlenhydrate</th>
+						<th>Fett</th>
+						<th>Protein</th>
+					</tr>
+					<tr>
+						<td>400kcal</td>
+						<td>100g</td>
+						<td>100g</td>
+						<td>100g</td>
+					</tr>
+				</table>
+			</div>
+			<hr />
+			<div class='mb-3' id='recipe'>
+				<h2>Zubereitung</h2>
+				<ul>
+					<li>🕑Arbeitszeit ca. {{recipe.preparationTime}} Minuten</li>
+					<li>🕔Koch-/Backzeit ca. {{recipe.cookingTime}} Minuten</li>
+					<li>🕖Gesamtzeit ca.
+						{{sum recipe.preparationTime recipe.cookingTime}}
+						Minuten</li>
+				</ul>
+				<p>
+					{{recipe.recipe}}
+				</p>
+			</div>
+			<hr />
+			<button class='btn btn-primary' id='add-favorite'>
+				🖤
+			</button>
+			<div id='comments'>
+				<h2>Kommentare</h2>
+				<p id='error-message'></p>
+				<form action='/api/recipe/add' method='post'>
+					<input type='hidden' name='recipe_id' value='{{recipe.id}}' />
+					<div class='mb-1'>
+						<textarea
+							class='comment-textarea'
+							name='comment'
+							id='comment'
+						></textarea>
+						<label for='comment'></label>
+					</div>
+					<input
+						class='button'
+						type='submit'
+						value='Absenden'
+						onsubmit='event.preventDefault();'
+					/>
+				</form>
+			</div>
+			<div class='comments-section'>
+				<div class='comments-box'></div>
+			</div>
+			<br /><br /><br /><br /><br />
+		</div>
+	</div>
+</div>

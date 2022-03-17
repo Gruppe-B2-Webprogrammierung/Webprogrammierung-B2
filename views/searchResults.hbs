@@ -1,0 +1,17 @@
+<div>
+	<form action='/recipe/search' method='get'>
+		<input type='text' name='q' placeholder='Suche...' />
+		<input type='submit' value='Suchen' />
+	</form>
+</div>
+
+{{#if recipes}}
+	<ul>
+		{{#each recipes as |recipe|}}
+			<li><a href={{stringConcat '/recipe/' recipe.id}}>{{recipe.title}}</a>
+				{{recipe.description}}</li>
+		{{/each}}
+	</ul>
+{{else}}
+	<div>Keine Rezepte gefunden</div>
+{{/if}}
