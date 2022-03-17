@@ -122,5 +122,154 @@
         "preparationTime": 20,
         "cookingTime": 10,
         "recipe": "In einer Schüssel, Butter (in Stücke geschnitten) mit dem Staubzucker und Vanillezucker schaumig schlagen. Das Ei zufügen und alles schön cremig schlagen.\nMehl mit dem Backpulver vermengen, salzen und dem Teig zufügen. Milch zufügen und weiter schlagen. Nun die gehackte, weiße Schokolade unterrühren.\nZum Schluss die Schokotropfen und Zimt dem Teig unterheben.\nEin Backblech mit Backpapier auslegen. Den Ofen auf 180°C, Ober- und Unterhitze vorheizen.\nAus der Masse kleine Häufchen formen und mit einem Löffel etwas platt drücken, mit etwas Abstand auf das Blech geben.\nDie Cookies ca. 8-10 Minuten im vorgeheizten Ofen bei Ober- und Unterhitze backen. Auskühlen lassen und sofort servieren oder in einer Keksdose aufbewahren.\n"
+    },
+    {
+        "id": "1a2b3c",
+        "title": "Wallnuss-Marzipan-Torte",
+        "description": "leckere Nuss - Sahne Torte umhüllt von einer Marzipandecke ",
+        "image": "https://img.chefkoch-cdn.de/rezepte/1461531251108576/bilder/1240881/crop-600x400/walnuss-marzipan-torte.jpg",
+        "ingredients": [
+            {
+                "amount": "4",
+                "unit": " Stück",
+                "name": "Eier"
+            },
+            {
+                "amount": "100",
+                "unit": "g",
+                "name": "Zucker"
+            },
+            {
+                "amount": "1",
+                "unit": " Prise",
+                "name": "Salz"
+            },
+            {
+                "amount": "100",
+                "unit": "g",
+                "name": "Mehl"
+            },
+            {
+                "amount": "34",
+                "unit": "g",
+                "name": "Speisestärke"
+            },
+            {
+                "amount": "1,5",
+                "unit": "TL",
+                "name": "Backpulver"
+            },
+            {
+                "amount": "200",
+                "unit": "g",
+                "name": "Wallnüsse"
+            },
+            {
+                "amount": "700",
+                "unit": "g",
+                "name": "Schlagsahne"
+            },
+            {
+                "amount": "2",
+                "unit": " Packungen",
+                "name": "Vanillinzucker"
+            },
+            {
+                "amount": "130",
+                "unit": "g",
+                "name": "Konfitüre (rote Johannisbeere)"
+            },
+            {
+                "amount": "1,5",
+                "unit": " Stück",
+                "name": "Marzipandecke oder"
+            },
+            {
+                "amount": "200",
+                "unit": "g",
+                "name": "Marzipanrohmasse"
+            }
+        ],
+        "nutritionalValues": {
+            "energy": "4438",
+            "carbohydrates": "535",
+            "fat": "219",
+            "protein": "81"
+        },
+        "preparationTime": 120,
+        "cookingTime": 40,
+        "recipe": "Die Eier trennen, die Eigelbe mit Zucker weißschaumig schlagen. Mehl, Backpulver, 1 - 2 EL Wasser und Speisestärke unterrühren. Die Eiweiße mit einer Prise Salz steif schlagen und vorsichtig unterheben.\n\nDen Boden einer Springform (26 cm) mit Backpapier auslegen. Dein Teig darauf glatt streichen und im vorgeheizten Backofen bei 200°C (Umluft: 175°C) ca. 20 Minuten backen. Den Springformrand lösen und den Boden auskühlen lassen. Danach aus der Form nehmen und waagerecht durchschneiden.\n\n75 g Walnüsse grob hacken, 6 Walnusskerne beiseitelegen und die restlichen Walnüsse fein mahlen. 600 g Sahne steif schlagen, den Vanillinzucker dabei einrieseln lassen. Die gemahlenen Nüsse unterheben.\n\nDen unteren Boden mit Hälfte der Nusssahne einstreichen. Den zweiten Boden draufsetzen und mit Johannisbeerkonfitüre einstreichen. Die Torte mit der restlichen Nusssahne rundherum einstreichen.\n\nDie Marzipan - Decke entrollen und rundherum einen ca. 1 cm breiten Rand abschneiden. Oder das Marzipan mit etwas Puderzucker verkneten, zwischen zwei Frischhaltefolien ausrollen und einen Kreis mit etwa 27 cm Durchmesser ausschneiden. Die Decke vorsichtig auf die Torte legen, leicht andrücken.\n\nDen unteren Rand mit den gehackten Walnüssen verzieren. 100 g Sahne steif schlagen, in einen Spritzbeutel mit Sterntülle füllen und die Torte mit Tuffs verzieren. Die sechs Walnusskerne halbieren und jeweils eine Hälfte auf einen Tuff setzen. Die Torte bis zum Servieren kaltstellen. "
+    },
+    {
+        "id": "9z8y7x",
+        "title": "Erdbeerkuchen",
+        "description": "schnell und lecker",
+        "image": "https://img.chefkoch-cdn.de/rezepte/687691171271837/bilder/803861/crop-600x400/erdbeerkuchen.jpg",
+        "ingredients": [
+            {
+                "amount": "75",
+                "unit": "g",
+                "name": "Butter"
+            },
+            {
+                "amount": "75",
+                "unit": "g",
+                "name": "Zucker"
+            },
+            {
+                "amount": "1",
+                "unit": " Packung",
+                "name": "Vanillezucker"
+            },
+            {
+                "amount": "2",
+                "unit": "Stück",
+                "name": "Ei(er)"
+            },
+            {
+                "amount": "125",
+                "unit": "g",
+                "name": "Mehl"
+            },
+            {
+                "amount": "1",
+                "unit": "TL",
+                "name": "Backpulver"
+            },
+            {
+                "amount": "500",
+                "unit": "g",
+                "name": "Erdbeeren"
+            },
+            {
+                "amount": "75",
+                "unit": "g",
+                "name": "Creme fraiche"
+            },
+            {
+                "amount": "150",
+                "unit": "g",
+                "name": "Joghurt"
+            },
+            {
+                "amount": "1",
+                "unit": " Packung",
+                "name": "Sahnesteif"
+            },
+            {
+                "amount": "1",
+                "unit": " Packung",
+                "name": "Tortenguss"
+            }
+        ],
+        "nutritionalValues": {
+            "energy": "2384",
+            "carbohydrates": "239",
+            "fat": "133",
+            "protein": "53"
+        },
+        "preparationTime": 30,
+        "cookingTime": 0,
+        "recipe": "Aus Butter, Zucker, Vanillezucker, Eiern, Salz, Weizenmehl, Backpulver und den Mandeln einen Rührteig bereiten, in eine gefettete Tortenbodenform füllen und glatt streichen. Bei 175 °C bis 200 °C Ober-/Unterhitze 20 - 25 Minuten backen.\n\nDie Crème fraîche mit dem Joghurt, Puderzucker, der Zitronenschale und dem Sahnesteif verrühren, die Masse auf den ausgekühlten Tortenboden streichen, mit den Erdbeeren belegen.\nTortenguss nach Anleitung auf dem Päckchen zubereiten, gleichmäßig auf den Erdbeeren verteilen.\n\nTipp: Wer es richtig süß möchte, kann die Erdbeeren noch zuckern und ein bisschen ziehen lassen. Den entstehenden (Erdbeer-)Saft auffangen und für den Tortenguss mitverwenden. "
     }
 ]
