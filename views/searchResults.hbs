@@ -4,15 +4,14 @@
 		<input type='submit' value='Suchen' />
 	</form>
 </div>
+
 {{#if recipes}}
-	{{#each recipes as |recipe|}}
-		<tr>
-			<td><a
-					href={{stringConcat '/recipe/' recipe.id}}
-				>{{recipe.title}}</a></td>
-			<td>{{recipe.description}}</td>
-		</tr>
-	{{/each}}
+	<ul>
+		{{#each recipes as |recipe|}}
+			<li><a href={{stringConcat '/recipe/' recipe.id}}>{{recipe.title}}</a>
+				{{recipe.description}}</li>
+		{{/each}}
+	</ul>
 {{else}}
 	<div>Keine Rezepte gefunden</div>
 {{/if}}
