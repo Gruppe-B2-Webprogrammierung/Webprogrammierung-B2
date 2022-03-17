@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 var { nanoid } = require('nanoid');
-var { trackUser } = require('../helper/userTracker');
+var { trackUser, getDataForUser } = require('../helper/userTracker');
 var { Request, Response, NextFunction } = require('express');
 
 /**
@@ -17,9 +17,17 @@ router.get('/', trackUser, function (req, res, next) {
 		user_id = nanoid(5);
 		res
 			.cookie('user_id', user_id, { maxAge: 1000 * 60 * 60 * 24 * 7 })
-			.render('index', { title: 'Recipes', username: user_id });
+			.render('index', {
+				title: 'Recipes',
+				username: user_id,
+				userData: getDataForUser(user_id),
+			});
 	} else {
-		res.render('index', { title: 'Recipes', username: req.cookies.user_id });
+		res.render('index', {
+			title: 'Recipes',
+			username: req.cookies.user_id,
+			userData: getDataForUser(req.cookies.user_id),
+		});
 	}
 });
 

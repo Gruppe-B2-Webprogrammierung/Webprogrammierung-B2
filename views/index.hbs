@@ -1,4 +1,5 @@
 <div class='grid-container'>
+
 	<div class='menu'></div>
 	<div class='content'>
 		<div class='container'>
@@ -16,7 +17,7 @@
 				</p>
 				<img
 					class='recipes-book'
-					src='https://cdn.pixabay.com/photo/2016/03/31/14/49/book-1292854_1280.png'
+					src='https://cdn.pixabay.com/photo/2016SW/03/31/14/49/book-1292854_1280.png'
 					alt='Rezeptbuch'
 					width='20%'
 					height='auto'
@@ -28,6 +29,17 @@
 					<input type='submit' value='Suchen' />
 				</form>
 			</div>
+			<h3>
+				Favorites:
+			</h3>
+			<div id='favorite-list'></div>
+			<h3>Most accessed routes:</h3>
+			{{#each userData}}
+				<div class='most-accessed'>
+					<a href='{{this.route}}'>{{this.route}}</a>
+					<span>{{this.count}}</span>
+				</div>
+			{{/each}}
 			<div>
 				<p>Hier ist die Liste der momentan verfügbaren Rezepte:</p>
 				<ul>
@@ -101,3 +113,4 @@
 		</div>
 	</div>
 </div>
+<script type='module' src='/javascripts/index.js'></script>

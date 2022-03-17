@@ -1,9 +1,19 @@
 // @ts-nocheck
 import { getCookie } from './cookie.js';
+import Favorites from './favorite.js';
 const form = document.querySelector('form');
 const errorMessage = document.querySelector('#error-message');
 const commentsBox = document.querySelector('.comments-box');
 errorMessage.hidden = true;
+const addFavoriteButton = document.querySelector('#add-favorite');
+
+const intialFavoriteCallback = (favorites) => {
+	if (favorites.includes(window.location.pathname.split('/')[2])) {
+		addFavoriteButton.innerHTML = '❤️';
+	}
+};
+
+let favorites = new Favorites(intialFavoriteCallback);
 
 class Comments {
 	/**
@@ -17,7 +27,7 @@ class Comments {
 			commentsBox.innerHTML += `<div class='comment'>
 					<div class='comment-header'>
 						<div class='comment-author'>
-							${comment.user_id}
+							User: ${comment.user_id}
 						</div>
 					</div>
 					<div class='comment-content'>
@@ -33,26 +43,13 @@ class Comments {
 
 let comments = new Comments();
 
-(() => {
-	fetch(
-		`/api/comment/get?recipe_id=${window.location.pathname.split('/')[2]}`,
-		{
-			method: 'GET',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		}
-	)
-		.then((res) => {
-			return res.json();
-		})
-		.then((data) => {
-			comments.comments = data;
-		})
-		.catch((err) => {
-			console.log(err);
-		});
-})();
+const addToFavorite = () => {
+	const recipeId = window.location.pathname.split('/')[2];
+	if (!favorites.favorites.includes(recipeId)) {
+		favorites.addFavorites([recipeId]);
+		addFavoriteButton.innerHTML = '❤️';
+	}
+};
 
 const submitComment = (event) => {
 	event.preventDefault();
@@ -82,3 +79,25 @@ const submitComment = (event) => {
 };
 
 form.onsubmit = submitComment;
+addFavoriteButton.onclick = addToFavorite;
+
+(() => {
+	fetch(
+		`/api/comment/get?recipe_id=${window.location.pathname.split('/')[2]}`,
+		{
+			method: 'GET',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		}
+	)
+		.then((res) => {
+			return res.json();
+		})
+		.then((data) => {
+			comments.comments = data;
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+})();
